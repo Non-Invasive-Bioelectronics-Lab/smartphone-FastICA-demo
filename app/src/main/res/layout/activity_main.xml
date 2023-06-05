@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphView2"
+            android:layout_width="365dp"
+            android:layout_height="175dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="24dp" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphView"
+            android:layout_width="368dp"
+            android:layout_height="184dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="22dp" />
+
+        <TextView
+            android:id="@+id/fftResults"
+            android:layout_width="354dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="293dp"
+            android:text="FFT results:" />
+
+        <TextView
+            android:id="@+id/stftResults"
+            android:layout_width="353dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="228dp"
+            android:text="STFT results:" />
+
+        <TextView
+            android:id="@+id/cwtResults"
+            android:layout_width="353dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="165dp"
+            android:text="CWT results:" />
+
+        <TextView
+            android:id="@+id/fastICAResults"
+            android:layout_width="355dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="109dp"
+            android:text="fastICA results:" />
+
+        <Button
+            android:id="@+id/fftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="308dp"
+            android:layout_marginBottom="52dp"
+            android:onClick="setFftButton"
+            android:text="FFT" />
+
+        <Button
+            android:id="@+id/stftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginBottom="52dp"
+            android:onClick="setStftButton"
+            android:text="stft" />
+
+        <Button
+            android:id="@+id/fastICAButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="setFastICAButton2"
+            android:text="fastICA" />
+
+        <Button
+            android:id="@+id/cwtButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="53dp"
+            android:onClick="setCwtButton"
+            android:text="CWT" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
